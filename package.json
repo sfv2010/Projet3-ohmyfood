@@ -1,0 +1,13 @@
+{
+  "name": "p3-ohmy",
+  "version": "1.0.0",
+  "description": "Projet 3 ohmyfood",
+  "main": "index.html",
+  "scripts": {
+    "sass":"sass --watch ./sass/style.scss:./public/css/style.css",
+    "prefix": "postcss ./css/style.css --use autoprefixer --d ./css/prefixed/"
+  },
+  "author": "Sayaka Vincent",
+  "license": "ISC",
+  "browserslist": "last 4 versions"
+}
