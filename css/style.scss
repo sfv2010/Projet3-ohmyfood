@@ -12,15 +12,18 @@
 
 // variable
 
+$colorPrimary: #9356dc;
+$colorPrimaryLight : lighten($color4,33%);
+$colorSecondary : #ff79da;
+$colorTertiary : #99e2d0;
+$colorTertiarydark :darken($colorTertiary, 50%);
 $color1: black ;
 $color1light : lighten($color1, 20%);
 $color2: #fff;
 $color3: #f2f2f2;
 $color3dark :darken($color3, 5%);
 $color3darkmore :darken($color3, 20%);
-$color4 : #9356dc;
-$color4light : lighten($color4,33%);
-$color5 : #ff79da;
+
 // mixin
 
 @mixin mobile400 {
@@ -98,13 +101,14 @@ header,article {
       padding: 15px 20px;
       border-radius: 30px;
       color: $color2;
-      background: linear-gradient($color5 0%, $color4 100%);
+      background: linear-gradient($colorSecondary, $colorPrimary);
       @include box-shadow ;
       transition: .3s;
       &:hover {
           opacity:0.8;
           font-size: 1.1rem;
           transform: translate(0,2px);
+          @include box-shadow($color1light);
       }
   }
 }
@@ -202,12 +206,12 @@ section {
         position: absolute;
         top: 15px;
         right: 10px;
-        background-color: #a8ffd3;
+        background-color: $colorTertiary;
         padding: 2%;
         width: 80px;
         text-align: center;
         font-size: 0.9rem;
-        color: green;
+        color: $colorTertiarydark;
     }
     &__image {
         height: 180px;
@@ -334,7 +338,7 @@ section {
         &:after {
             position: absolute;
             content: "";
-            border-bottom: 4px solid #99e2d0;
+            border-bottom: 4px solid $color6;
             width: 45px;
             padding: 2px;
             display: block;
