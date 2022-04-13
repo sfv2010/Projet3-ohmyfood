@@ -563,13 +563,6 @@ section {
   }
 }
 
-.card__box:hover .card__choice {
-  -webkit-box-shadow: 0 4px 10px #9356dc;
-          box-shadow: 0 4px 10px #9356dc;
-  -webkit-transform: translate(0, 2px);
-          transform: translate(0, 2px);
-}
-
 .footer {
   padding: 30px;
   background-color: #333333;

@@ -1,13 +1,20 @@
 {
-  "name": "p3-ohmy",
+  "name": "projet3-ohmyfood",
   "version": "1.0.0",
-  "description": "Projet 3 ohmyfood",
+  "description": "P3 openclassrooms",
   "main": "index.html",
   "scripts": {
-    "sass":"sass --watch ./sass/style.scss:./public/css/style.css",
-    "prefix": "postcss ./css/style.css --use autoprefixer --d ./css/prefixed/"
+    "sass":"sass --watch ./css/style.scss:./css/style.css",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
   },
-  "author": "Sayaka Vincent",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sfv2010/Projet3-ohmyfood.git"
+  },
+  "author": "Sayaka VINCENT",
   "license": "ISC",
-  "browserslist": "last 4 versions"
+  "bugs": {
+    "url": "https://github.com/sfv2010/Projet3-ohmyfood/issues"
+  },
+  "homepage": "https://github.com/sfv2010/Projet3-ohmyfood#readme"
 }
