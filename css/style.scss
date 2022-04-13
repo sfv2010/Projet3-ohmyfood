@@ -13,7 +13,7 @@
 // variable
 
 $colorPrimary: #9356dc;
-$colorPrimaryLight : lighten($color4,33%);
+$colorPrimaryLight : lighten($colorPrimary,33%);
 $colorSecondary : #ff79da;
 $colorTertiary : #99e2d0;
 $colorTertiarydark :darken($colorTertiary, 50%);
@@ -101,7 +101,7 @@ header,article {
       padding: 15px 20px;
       border-radius: 30px;
       color: $color2;
-      background: linear-gradient($colorSecondary, $colorPrimary);
+      background: linear-gradient($colorSecondary 0%, $colorPrimary);
       @include box-shadow ;
       transition: .3s;
       &:hover {
@@ -147,7 +147,7 @@ section {
         }
         
         &:hover {
-            background-color:$color4light;            
+            background-color:$colorPrimaryLight;            
         }
     }
     &__number {
@@ -156,7 +156,7 @@ section {
         position: absolute;
         left: -15px;
         border-radius: 50%;
-        background: $color4;
+        background: $colorPrimary;
         color: $color2; 
         font-size: 0.8rem;
     }
@@ -198,7 +198,7 @@ section {
             width: 300px;
         }
         &:hover {
-            @include box-shadow($color4);
+            @include box-shadow($colorPrimary);
             transform: translate(0,2px);
         }
     }
@@ -299,7 +299,7 @@ section {
         padding: 15px 50px;
         border-radius: 30px;
         color: $color2;
-        background: linear-gradient($color5 0%, $color4 100%);
+        background: linear-gradient($colorSecondary, $colorPrimary);
         @include box-shadow ;
         transition: .3s;
         &:hover {
@@ -338,7 +338,7 @@ section {
         &:after {
             position: absolute;
             content: "";
-            border-bottom: 4px solid $color6;
+            border-bottom: 4px solid $colorTertiary;
             width: 45px;
             padding: 2px;
             display: block;

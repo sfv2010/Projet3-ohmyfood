@@ -89,7 +89,7 @@ header, article {
   border-radius: 30px;
   color: #fff;
   background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
-  background: linear-gradient(#ff79da 0%, #9356dc 100%);
+  background: linear-gradient(#ff79da 0%, #9356dc);
   -webkit-box-shadow: 0 4px 10px #bfbfbf;
           box-shadow: 0 4px 10px #bfbfbf;
   -webkit-transition: .3s;
@@ -101,6 +101,8 @@ header, article {
   font-size: 1.1rem;
   -webkit-transform: translate(0, 2px);
           transform: translate(0, 2px);
+  -webkit-box-shadow: 0 4px 10px #333333;
+          box-shadow: 0 4px 10px #333333;
 }
 
 section {
@@ -257,12 +259,12 @@ section {
   position: absolute;
   top: 15px;
   right: 10px;
-  background-color: #a8ffd3;
+  background-color: #99e2d0;
   padding: 2%;
   width: 80px;
   text-align: center;
   font-size: 0.9rem;
-  color: green;
+  color: #1b6150;
 }
 
 .restaurants__image {
@@ -408,7 +410,7 @@ section {
   border-radius: 30px;
   color: #fff;
   background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
-  background: linear-gradient(#ff79da 0%, #9356dc 100%);
+  background: linear-gradient(#ff79da, #9356dc);
   -webkit-box-shadow: 0 4px 10px #bfbfbf;
           box-shadow: 0 4px 10px #bfbfbf;
   -webkit-transition: .3s;
