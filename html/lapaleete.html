@@ -6,22 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La palette du goût</title>
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/menu.css">
     <script src="https://kit.fontawesome.com/6fd12a2cf4.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,700&family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,700&family=Shrikhand&display=swap" rel="stylesheet">
 </head>
 <body>
+<!-- header     -->
     <header class="menuHeader">
-        <a href="index.html">
+        <a class="menuHeader__arrow" href="index.html">
             <i class="fa-solid fa-arrow-left menuHeader__icon"></i>
         </a>
-        <h1 class="menuHeader__title header__title">
-            <a class="header__a" href="#">
-                <img class="header__logo" src="../images/logo/ohmyfood.png" alt="logo de ohmyfood">
-            </a>
+        <h1 class="menuHeader__title">
+            <img class="menuHeader__logo" src="../images/logo/ohmyfood.png" alt="ohmyfood">
         </h1>
     </header>
-    <div class="menuimage"><img class="menuimage" src="../images/restaurants/lapalettedugout1920.jpg" alt="La palette du goût"> </div>
+
+    <div class="menuimage">
+        <img class="menuimage" src="../images/restaurants/lapalettedugout1920.jpg" alt="La palette du goût"> 
+    </div>
+<!-- main -->
     <main class="menu">
         <div class="menu__titleBloc">
             <h2 class="menu__title">La palette du goût</h2>
@@ -37,7 +40,9 @@
                             <p class="card__p">Au piment d'espelette</p> 
                         </div>
                         <div class="card__price">25€</div>
-                        <div class="card__choice"></div>
+                        <div class="card__choice">
+                            <i class="fa-regular fa-circle-check card__choice--icon"></i>
+                        </div>
                     </div>
                 </a>
             </div> 
@@ -49,7 +54,7 @@
                             <p class="card__p">Et ses copeaux de truffe noire</p>
                         </div>
                     <div class="card__price">35€</div>
-                    <div class="card__choice"></div>
+                    <div class="card__choice"><i class="fa-regular fa-circle-check card__choice--icon"></i></div>
                     </div>
                 </a>
             </div>  
@@ -61,13 +66,14 @@
                             <p class="card__p">Assaisonné à la truffe sur lit de caviar</p>
                         </div>
                         <div class="card__price">20€</div>
-                        <div class="card__choice"></div>
+                        <div class="card__choice">
+                            <i class="fa-regular fa-circle-check card__choice--icon"></i>
+                        </div>
                     </div>
                 </a>
             </div>                                 
         </section>
-        <section class="card">
-            
+        <section class="card">     
             <div class="card__bloc">
                 <h3 class="card__h3">PLATS</h3>
                 <a href="#"> 
@@ -77,7 +83,7 @@
                             <p class="card__p">Accompagné de sa ribambelle de légumes</p>
                         </div>
                         <div class="card__price">40€</div>
-                        <div class="card__choice"></div>
+                        <div class="card__choice"><i class="fa-regular fa-circle-check card__choice--icon"></i></div>
                   </div>
                 </a>
             </div> 
@@ -89,7 +95,9 @@
                             <p class="card__p">À la truffe noire sur sa purée de panais</p>
                         </div>
                         <div class="card__price">35€</div>
-                        <div class="card__choice"></div>
+                        <div class="card__choice">
+                            <i class="fa-regular fa-circle-check card__choice--icon"></i>
+                        </div>
                     </div>
                 </a>
             </div>  
@@ -101,13 +109,14 @@
                             <p class="card__p">Aux agrumes</p>
                         </div>
                     <div class="card__price">44€</div>
-                    <div class="card__choice"></div>
+                    <div class="card__choice">
+                        <i class="fa-regular fa-circle-check card__choice--icon"></i>
+                    </div>
                     </div>
                 </a>
             </div>                                 
         </section>
         <section class="card">
-            
             <div class="card__bloc">
                 <h3 class="card__h3">DESSERTS</h3>
                 <a href="#"> 
@@ -117,7 +126,9 @@
                             <p class="card__p">Revisité</p>
                         </div>
                         <div class="card__price">18€</div>
-                        <div class="card__choice"></div>
+                        <div class="card__choice">
+                            <i class="fa-regular fa-circle-check card__choice--icon"></i>
+                        </div>
                     </div>
                 </a>
             </div> 
@@ -129,7 +140,9 @@
                             <p class="card__p">Et glace à la vanille de Madagascar</p>
                         </div>
                         <div class="card__price">22€</div>
-                        <div class="card__choice"></div>
+                        <div class="card__choice">
+                            <i class="fa-regular fa-circle-check card__choice--icon"></i>
+                        </div>
                     </div>
                 </a>
             </div>  
@@ -141,7 +154,8 @@
                             <p class="card__p">Au piment d'Espelette et à la truffe noire</p>
                         </div>
                         <div class="card__price">23€</div>
-                        <div class="card__choice"></div>
+                        <div class="card__choice">
+                            <i class="fa-regular fa-circle-check card__choice--icon"></i></div>
                     </div>
                 </a>
             </div>                                 
@@ -150,7 +164,7 @@
             <a href="#" class="menu__button--content">Commander</a>
         </div>
     </main>
-
+<!-- footer -->
     <footer class="footer">
         <h3 class="footer__title">ohmyfood</h3>
         <ul class="footer__ul">
