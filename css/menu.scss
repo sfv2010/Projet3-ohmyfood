@@ -82,7 +82,6 @@ $colorGradient :linear-gradient($colorSecondary, $colorPrimary);
         opacity: .5;
     }
     100% {
-        transform: translate(none);
         opacity: 1;
 
     }
@@ -293,13 +292,13 @@ li {
             align-items: center;
             background-color: $colorTertiary;
             border-radius: 0 15px 15px 0;
-            width: 50px;
+            width: 45px;
             padding-right: 13px;
-            height: 100%; /*20%*/
-            // animation: 0.3s linear keyFrameChoice forwards;
+            height: 100%; 
           }
           & .card__price {
             transform: translate(-5px);
+            padding-right: 5px;
           }
           & .card__menu {
               width: 50%;
@@ -318,7 +317,6 @@ li {
         transform:scale(0);
         transform: translateX(100%);
         transition: all 0.3s;
-        // animation: 2s linear keYframeChoice forwards;
         &--icon {
             color: $colorTertiary;
             background-color: $color2;

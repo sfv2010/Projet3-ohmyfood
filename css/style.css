@@ -53,8 +53,8 @@ li {
           align-items: center;
   -webkit-animation-name: loaderback;
           animation-name: loaderback;
-  -webkit-animation-duration: 2.5s;
-          animation-duration: 2.5s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
   -webkit-animation-timing-function: ease;
           animation-timing-function: ease;
   -webkit-animation-delay: 0s;
@@ -82,11 +82,10 @@ li {
   display: inline-block;
   z-index: 1000;
   background: rgba(255, 255, 255, 0.5);
-  opacity: 0;
   -webkit-animation-name: loader;
           animation-name: loader;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
   -webkit-animation-delay: 0s;
@@ -100,33 +99,33 @@ li {
 }
 
 .loader__bloc > div:nth-child(1) {
-  -webkit-animation-delay: -2s;
-          animation-delay: -2s;
+  -webkit-animation-delay: -2.9s;
+          animation-delay: -2.9s;
 }
 
 .loader__bloc > div:nth-child(2) {
-  -webkit-animation-delay: -1.9s;
-          animation-delay: -1.9s;
+  -webkit-animation-delay: -2.7s;
+          animation-delay: -2.7s;
 }
 
 .loader__bloc > div:nth-child(3) {
-  -webkit-animation-delay: -1.8s;
-          animation-delay: -1.8s;
+  -webkit-animation-delay: -2.5s;
+          animation-delay: -2.5s;
 }
 
 .loader__bloc > div:nth-child(4) {
-  -webkit-animation-delay: -1.7s;
-          animation-delay: -1.7s;
+  -webkit-animation-delay: -2.3s;
+          animation-delay: -2.3s;
 }
 
 .loader__bloc > div:nth-child(5) {
-  -webkit-animation-delay: -1.6s;
-          animation-delay: -1.6s;
+  -webkit-animation-delay: -2.1s;
+          animation-delay: -2.1s;
 }
 
 .loader__bloc > div:nth-child(6) {
-  -webkit-animation-delay: -1.5s;
-          animation-delay: -1.5s;
+  -webkit-animation-delay: -1.9s;
+          animation-delay: -1.9s;
 }
 
 .loader__bloc > div:nth-child(-n+2) {
@@ -152,7 +151,6 @@ li {
   20% {
     -webkit-transform: scaleY(1);
             transform: scaleY(1);
-    opacity: 1;
   }
 }
 
@@ -167,13 +165,15 @@ li {
   20% {
     -webkit-transform: scaleY(1);
             transform: scaleY(1);
-    opacity: 1;
   }
 }
 
 @-webkit-keyframes loaderback {
   0% {
     opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
   }
   100% {
     opacity: 0;
@@ -184,6 +184,9 @@ li {
 @keyframes loaderback {
   0% {
     opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
   }
   100% {
     opacity: 0;

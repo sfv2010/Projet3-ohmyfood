@@ -94,7 +94,7 @@ li {
     align-items: center;
     @include animation(
         $name:loaderback,
-        $duration: 2.5s,
+        $duration: 3s,
         );
         // visibility: hidden;
         opacity: 0;
@@ -112,17 +112,17 @@ li {
             display: inline-block;
             z-index: 1000;
             background: hsla(0, 0, 100%, 0.5);
-            opacity: 0;
+            // opacity: 0;
 
             @include animation(
                 $name: loader,
-                $duration: 2s,
+                $duration: 3s,
                 $iteration-count: 2,
                 $timing-function: ease-in-out,
         );
         @for $i from 1 through 6 {
             &:nth-child(#{$i}) {
-              animation-delay: -2.1s + $i * 0.1s;
+              animation-delay: -3.1s + $i * 0.2s;
             }
         }
 
@@ -142,12 +142,13 @@ li {
     }
     20% {
       transform: scaleY(1);
-      opacity: 1;
+    //   opacity: 1;
     }
 }   
     
   @keyframes loaderback {
       0% {opacity: 1}
+      50% {opacity: 0.8;}
       100% {
           opacity:0;
           z-index: -10;

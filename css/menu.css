@@ -23,8 +23,6 @@
     opacity: .5;
   }
   100% {
-    -webkit-transform: translate(none);
-            transform: translate(none);
     opacity: 1;
   }
 }
@@ -42,8 +40,6 @@
     opacity: .5;
   }
   100% {
-    -webkit-transform: translate(none);
-            transform: translate(none);
     opacity: 1;
   }
 }
@@ -408,15 +404,15 @@ li {
           align-items: center;
   background-color: #99e2d0;
   border-radius: 0 15px 15px 0;
-  width: 50px;
+  width: 45px;
   padding-right: 13px;
   height: 100%;
-  /*20%*/
 }
 
 .card__box:hover .card__price {
   -webkit-transform: translate(-5px);
           transform: translate(-5px);
+  padding-right: 5px;
 }
 
 .card__box:hover .card__menu {
