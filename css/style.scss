@@ -43,8 +43,27 @@ $colorGradient :linear-gradient($colorSecondary, $colorPrimary);
     flex-wrap: $wrap;
 }
 @mixin box-shadow($color: $color3darkmore){
-    box-shadow: 0 4px 10px $color ;
+    box-shadow: 0 6px 10px $color ;
     }
+@mixin animation(
+    $name,
+    $duration: 1s,
+    $timing-function: ease,
+    $delay: 0s,
+    $iteration-count: 1,
+    $direction: normal,
+    $fill-mode: forwards
+    ) {
+    animation: {
+        name: $name;
+        duration: $duration;
+        timing-function: $timing-function;
+        delay: $delay;
+        iteration-count: $iteration-count;
+        direction: $direction;
+        fill-mode: $fill-mode;
+    }
+}
 
 html {
   font-size: 100%;
@@ -60,6 +79,80 @@ img {
 }
 li {
     list-style: none;  
+}
+.loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999; 
+    background: $color2;
+    @include flex(center);
+    align-items: center;
+    @include animation(
+        $name:loaderback,
+        $duration: 2.5s,
+        );
+        // visibility: hidden;
+        opacity: 0;
+
+    &__bloc {
+        margin: auto;
+        width: 50px;
+        height: 40px;
+        text-align: center;
+        letter-spacing: -2px;
+        // z-index: 1000;
+        & > div {
+            height: 50px;
+            width: 6px;
+            display: inline-block;
+            z-index: 1000;
+            background: hsla(0, 0, 100%, 0.5);
+            opacity: 0;
+
+            @include animation(
+                $name: loader,
+                $duration: 2s,
+                $iteration-count: 2,
+                $timing-function: ease-in-out,
+        );
+        @for $i from 1 through 6 {
+            &:nth-child(#{$i}) {
+              animation-delay: -2.1s + $i * 0.1s;
+            }
+        }
+
+        &:nth-child(-n+2){background-color: $colorPrimary;}
+        &:nth-child(n+3){background-color: $colorSecondary;}
+        &:nth-child(n+5){background-color: $colorTertiary;}
+    }
+}
+        
+}
+@keyframes loader {
+    0%,
+    40%,
+    100% {
+      transform: scaleY(0.4);
+      z-index: -10;
+    }
+    20% {
+      transform: scaleY(1);
+      opacity: 1;
+    }
+}   
+    
+  @keyframes loaderback {
+      0% {opacity: 1}
+      100% {
+          opacity:0;
+          z-index: -10;
+        }
+      
 }
 
 header,article {
@@ -103,7 +196,7 @@ header,article {
       color: $color2;
       background: $colorGradient;
       @include box-shadow ;
-      transition: .3s;
+      transition: .3s ease-out;
       &:hover {
           opacity:0.8;
           font-size: 1.1rem;
@@ -143,13 +236,17 @@ section {
         background-color: $color3;
         border-radius: 28px;
         position: relative;
-        transition: .5s;
+        transition: .3s;
         @include mobile400 {
             padding: 18px 25px;
         }
         
         &:hover {
-            background-color:$colorPrimaryLight;            
+            background-color:$colorPrimaryLight; 
+            @include box-shadow(grey);
+            & .functioning__icon {
+                color: #9356dc;
+            }           
         }
     }
     &__number {
@@ -232,14 +329,35 @@ section {
         
     }
     &__icon {
+        position: relative;
+        font-size: 1.8rem;
+        cursor:pointer;
         align-self: center;
-        font-size: 1.4rem;
-        bottom: 25px;
+        font-size: 1.5rem;
         transition: .2s;
-        // &:hover {
-        //     background: linear-gradient(#ff79da 0%, #9356dc 100%);
-        // }
-    }   
+        &--2 {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: 0.3s ease-in;
+            background: -webkit-linear-gradient(0deg, $colorPrimary, $colorSecondary);//背景色にグラデーションを指定
+            -webkit-background-clip: text;//enlever le text
+            -webkit-text-fill-color: transparent;//afficher derrier
+            opacity: 0;
+        }
+        &:hover {
+            & .restaurants__icon--1 {
+                opacity: 0;
+            }
+            & .restaurants__icon--2{
+                opacity: 1;
+            }
+        }
+    }
+
+    
 }
 
 .footer {
