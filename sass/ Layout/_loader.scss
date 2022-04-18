@@ -31,16 +31,16 @@
                 $duration: 3s,
                 $iteration-count: 2,
                 $timing-function: ease-in-out,
-        );
-        @for $i from 1 through 6 {
-            &:nth-child(#{$i}) {
-              animation-delay: -3.1s + $i * 0.2s;
+            );
+            @for $i from 1 through 6 {
+                &:nth-child(#{$i}) {
+                  animation-delay: -3.1s + $i * 0.2s;
+                }
             }
-        }
 
-        &:nth-child(-n+2){background-color: $colorPrimary;}
-        &:nth-child(n+3){background-color: $colorSecondary;}
-        &:nth-child(n+5){background-color: $colorTertiary;}
+            &:nth-child(-n+2){background-color: $colorPrimary;}
+            &:nth-child(n+3){background-color: $colorSecondary;}
+            &:nth-child(n+5){background-color: $colorTertiary;}
     }
 }
         

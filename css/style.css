@@ -46,6 +46,40 @@
   }
 }
 
+@-webkit-keyframes heart {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    opacity: 1;
+  }
+}
+
+@keyframes heart {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    opacity: 1;
+  }
+}
+
 *,
 *:before,
 *:after {
@@ -81,7 +115,7 @@ li {
 .button {
   display: inline-block;
   cursor: pointer;
-  margin: 30px;
+  margin: 30px 30px 20px;
   max-width: 300px;
   padding: 20px;
   line-height: 10px;
@@ -531,6 +565,19 @@ section {
 }
 
 .restaurants__icon:hover .restaurants__icon--2 {
-  opacity: 1;
+  -webkit-animation-name: heart;
+          animation-name: heart;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 /*# sourceMappingURL=style.css.map */

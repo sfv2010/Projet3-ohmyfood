@@ -46,10 +46,10 @@
                 opacity: 0;
             }
             & .menu__heart--2{
-                transform: scaleY(1);
-                transition: 0.5s;
-                transform-origin: top;
-                opacity: 1;
+                @include animation (
+                $name:heart,
+                $duration: .5s,
+            );
             }
         }
     }
@@ -84,8 +84,7 @@
     }
     @include tablet {
         background-color: $color3;
-        border-radius: 30px;
-        
+        border-radius: 30px;    
     }
     &__h3 {
         width: 90px;
@@ -191,13 +190,9 @@
         
         }    
     }
-    &__box1 {
-        animation-delay: -0.5s;
-    }
-    &__box2 {
-        animation-delay: -0.3s;
-    }
-    &__box3 {
-        animation-delay: -0.1s;
+    @for $i from 1 through 4 {
+        &__box#{$i} {
+          animation-delay: -0.5 + $i * 0.2s;
+        }
     }
 }
