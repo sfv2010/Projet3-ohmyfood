@@ -7,6 +7,9 @@
     padding:0 30px;
     &__icon {
        font-size: 1.3rem;
+       &:hover {
+           color: $colorPrimary;
+       }
     }
     &__title {
         flex: 1;
