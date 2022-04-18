@@ -1,0 +1,12 @@
+header,article {
+    text-align: center;
+  }
+  .header {
+    margin-bottom: 5px;
+    box-shadow: 0px 5px 20px $color3darkmore;
+    &__logo {
+      padding: 1%;
+      margin-top: 20px;
+      width: 200px;
+    }
+  }

@@ -1,0 +1,17 @@
+// The dishes
+@keyframes bouncedelay {
+    0% {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+
+    }    
+}

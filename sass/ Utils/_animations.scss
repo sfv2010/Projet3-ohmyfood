@@ -1,0 +1,18 @@
+// loading-spinner
+@keyframes loader {
+    0%,40%,100% {
+      transform: scaleY(0.4);
+    }
+    20% {
+      transform: scaleY(1);
+    }
+}   
+    
+@keyframes loaderback {
+    0% {opacity: 1}
+    50% {opacity: 0.9;}
+    100% {
+        opacity:0;
+        z-index: -1;
+    }     
+}

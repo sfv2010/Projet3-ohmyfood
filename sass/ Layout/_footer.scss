@@ -1,0 +1,25 @@
+.footer {
+    padding: 30px;
+    background-color: $color1light;
+    color: $color2;
+    @include tablet{
+        text-align: center;
+    }
+    &__title {
+        font-family: 'Shrikhand', cursive;
+        padding-bottom: 10px;
+    }
+    &__ul {
+        line-height: 2rem;
+    }
+    &__a {
+        color: #fff;
+        transition: .2s;
+        &:hover {
+            border-bottom: 1px solid #fff;
+        }
+    }
+    &__icon {
+        width: 20px;
+    }
+}
