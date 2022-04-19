@@ -244,8 +244,6 @@ li {
   left: 0;
   -webkit-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
-  -webkit-transform: scaleY(0);
-          transform: scaleY(0);
   background: -webkit-linear-gradient(0deg, #9356dc, #ff79da);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
