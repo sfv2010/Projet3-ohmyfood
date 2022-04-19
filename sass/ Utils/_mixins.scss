@@ -10,6 +10,11 @@
       @content;
     }
 }
+@mixin desktop {
+    @media (min-width: 1120px) {
+      @content;  
+    }
+}
 @mixin flex($space,$wrap:wrap) {
     display: flex;
     justify-content: $space;
