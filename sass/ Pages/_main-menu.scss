@@ -24,6 +24,7 @@
             padding-right: 20px;
         }
     }
+    // animation-Heart
     &__heart {
         position: relative;
         font-size: 1.8rem;
@@ -36,9 +37,9 @@
             left: 0;
             transition: 0.3s ease-in;
             transform: scaleY(0);
-            background: -webkit-linear-gradient(0deg, $colorPrimary, $colorSecondary);//背景色にグラデーションを指定
-            -webkit-background-clip: text;//enlever le text
-            -webkit-text-fill-color: transparent;//afficher derrier
+            background: -webkit-linear-gradient(0deg, $colorPrimary, $colorSecondary);
+            -webkit-background-clip: text;//Creusez le texte
+            -webkit-text-fill-color: transparent;//Afficher l'arrière-plan crusé
             opacity: 0;
         }
         &:hover {
@@ -75,7 +76,7 @@
     @include flex(space-around,nowrap);
     flex-direction: column;
     margin: 5px 0;
-    padding: 15px;
+    padding: 15px 10px;
     @include tablet {
         background-color: $color3;
         border-radius: 30px; 
@@ -94,7 +95,7 @@
         width: 90px;
         position: relative;
         font-weight: 300;
-        margin-left: 5px;
+        margin:0 10px;
         padding-bottom: 10px;
         @include tablet {
             display: flex;
@@ -105,6 +106,7 @@
         }
         @include desktop {
             margin-bottom: 0;
+            margin:0 10px 0 0;
 
         }
         &:after {
@@ -140,6 +142,7 @@
             flex-direction: row;
         }
     }
+    //animation-bounce
     &__box {
         @include flex(space-between,nowrap);
         align-items: flex-end;
@@ -184,6 +187,11 @@
           }
         }
     }
+    @for $i from 1 through 4 {
+        &__box#{$i} {
+          animation-delay: -0.5 + $i * 0.2s;
+        }
+    }
     &__box4 {
         @include desktop {
             margin-left: 100px;
@@ -205,9 +213,5 @@
       
         }    
     }
-    @for $i from 1 through 4 {
-        &__box#{$i} {
-          animation-delay: -0.5 + $i * 0.2s;
-        }
-    }
+    
 }
