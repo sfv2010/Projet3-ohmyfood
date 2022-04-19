@@ -184,6 +184,11 @@
           }
         }
     }
+    &__box4 {
+        @include desktop {
+            margin-left: 100px;
+        }
+    }
     &__choice{
         text-align: center;
         border-radius: 0 15px 15px 0;
