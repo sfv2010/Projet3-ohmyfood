@@ -29,6 +29,18 @@
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+@mixin heart {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.3s ease-in;
+  background: -webkit-linear-gradient(0deg, $colorPrimary, $colorSecondary);
+  -webkit-background-clip: text;//Creusez le texte
+  -webkit-text-fill-color: transparent;//Afficher l'arrière-plan crusé
+  opacity: 0;
+}
 @mixin animation(
   $name,
   $duration: 1s,

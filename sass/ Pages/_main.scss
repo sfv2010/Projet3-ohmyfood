@@ -140,24 +140,16 @@ section {
         padding: 10px 20px;
         line-height: 23px;     
     }
-    &__icon {
-        position: relative;
+     //animation heart
+    &__icon {             
+        position: relative; 
         font-size: 1.8rem;
         cursor:pointer;
         align-self: center;
         font-size: 1.5rem;
         transition: .2s;
         &--2 {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            transition: 0.3s ease-in;
-             background: -webkit-linear-gradient(0deg, $colorPrimary, $colorSecondary);
-            -webkit-background-clip: text;//enlever le text
-            -webkit-text-fill-color: transparent;//afficher derrier
-            opacity: 0;
+            @include heart; 
         }
         &:hover {
             & .restaurants__icon--1 {
