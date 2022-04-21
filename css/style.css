@@ -437,6 +437,8 @@ section {
 }
 
 .restaurants__bloc {
+  max-width: 2000px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -460,7 +462,9 @@ section {
 }
 
 .restaurants__title {
-  padding-left: 5%;
+  max-width: 2500px;
+  margin: 0 auto;
+  padding-left: 2%;
 }
 
 .restaurants__box {
