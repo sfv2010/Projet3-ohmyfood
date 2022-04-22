@@ -532,14 +532,11 @@ section {
 
 .restaurants__icon {
   position: relative;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   cursor: pointer;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  font-size: 1.5rem;
-  -webkit-transition: .2s;
-  transition: .2s;
 }
 
 .restaurants__icon--2 {
@@ -550,7 +547,8 @@ section {
   left: 0;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
-  background: -webkit-linear-gradient(0deg, #9356dc, #ff79da);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(#ff79da, #9356dc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;

@@ -38,7 +38,7 @@
             }
             & .menu__heart--2{
                 @include animation (
-                $name:heart,
+                $name: heart,
                 $duration: 0.3s,
             );
             }

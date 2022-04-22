@@ -147,11 +147,9 @@ section {
      //animation heart
     &__icon {             
         position: relative; 
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         cursor:pointer;
         align-self: center;
-        font-size: 1.5rem;
-        transition: .2s;
         &--2 {
             @include heart; 
         }
@@ -162,7 +160,7 @@ section {
             & .restaurants__icon--2{
                 @include animation (
                     $name:heart,
-                    $duration: .3s,
+                    $duration: 0.3s,
                     );
             }
         }
