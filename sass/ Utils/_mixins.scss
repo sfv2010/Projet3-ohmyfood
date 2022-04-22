@@ -35,7 +35,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  transition: 0.3s ease-in;
+  transition: 0.3s ease-in-out;
   background: -webkit-linear-gradient(0deg, $colorPrimary, $colorSecondary);
   -webkit-background-clip: text;//Creusez le texte
   -webkit-text-fill-color: transparent;//Afficher l'arrière-plan crusé
