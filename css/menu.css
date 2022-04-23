@@ -497,7 +497,7 @@ li {
           align-items: center;
   background-color: #99e2d0;
   border-radius: 0 15px 15px 0;
-  width: 50px;
+  width: 45px;
   padding-right: 13px;
   height: 100%;
 }
@@ -515,8 +515,8 @@ li {
 .card__box:hover .card__choice--icon {
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  -webkit-transform: rotateZ(360deg);
-          transform: rotateZ(360deg);
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 .card__box1 {

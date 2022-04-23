@@ -159,7 +159,7 @@
             align-items: center;
             background-color: $colorTertiary;
             border-radius: 0 15px 15px 0;
-            width: 50px;
+            width: 45px;
             padding-right: 13px;
             height: 100%; 
           }
@@ -172,7 +172,7 @@
           }
           & .card__choice--icon {
             transition: 0.4s;
-            transform: rotateZ( 360deg );
+            transform: rotate( 360deg );
           }
         }
     }
