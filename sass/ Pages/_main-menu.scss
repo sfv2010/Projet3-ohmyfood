@@ -8,7 +8,7 @@
     }
 }
 .menu {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: auto;
     position: relative;
     margin-top: -100px;
@@ -112,6 +112,9 @@
     }
     &__menu {
         width: 80%;
+        @include desktop {
+            width: 90%;
+        }
     }
     &__h4 {
        @include overflow;
@@ -153,7 +156,7 @@
             width: 400px;
         }
         @include desktop {
-            width: 300px;
+            width: 365px;
         }
         &:hover {
             & .card__choice {
