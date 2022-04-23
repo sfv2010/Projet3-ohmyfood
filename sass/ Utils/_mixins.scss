@@ -24,7 +24,6 @@
     box-shadow: 0 4px 10px $color ;
     }
 @mixin overflow {
-    max-width: 250px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -35,7 +34,6 @@
   position: absolute;
   top: 0;
   left: 0;
-  transition: 0.3s ease-in-out;
   background: $colorGradient;
   -webkit-background-clip: text;//Creusez le texte
   -webkit-text-fill-color: transparent;//Afficher l'arrière-plan crusé
