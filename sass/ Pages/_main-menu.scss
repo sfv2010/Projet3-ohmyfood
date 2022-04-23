@@ -121,7 +121,8 @@
         @include overflow;
     }
     &__price {
-        font-weight: bold
+        font-weight: bold;
+        transition: 0.4s;
     }
     &__bloc {
         @include flex(space-around,nowrap);
@@ -131,7 +132,7 @@
             flex-direction: row;
         }
     }
-    //animation-bounce,selection
+    //animation-bounce,choice
     &__box {
         @include flex(space-between,nowrap);
         align-items: flex-end;
@@ -143,7 +144,6 @@
         background-color: $color2;
         border-radius: 15px;
         line-height: 25px;
-        transition: .2s;
         opacity: 0;
         @include animation(
             $name: bouncedelay,
@@ -159,7 +159,7 @@
             align-items: center;
             background-color: $colorTertiary;
             border-radius: 0 15px 15px 0;
-            width: 45px;
+            width: 50px;
             padding-right: 13px;
             height: 100%; 
           }
@@ -172,13 +172,13 @@
           }
           & .card__choice--icon {
             transition: 0.4s;
-            transform: rotateZ( 360deg ) 
+            transform: rotateZ( 360deg );
           }
         }
     }
     @for $i from 1 through 4 {
         &__box#{$i} {
-          animation-delay: -0.5 + $i * 0.2s;
+          animation-delay: -0.5s + $i * 0.2s;
         }
     }
     &__box4 {
@@ -193,7 +193,7 @@
         background-color: $colorTertiary;
         transform:scale(0);
         transform: translateX(100%);
-        transition: all 0.3s;
+        transition: 0.3s;
         &--icon {
             color: $colorTertiary;
             background-color: $color2;
