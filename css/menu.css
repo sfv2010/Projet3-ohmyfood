@@ -477,6 +477,12 @@ li {
 
 @media (min-width: 700px) {
   .card__box {
+    width: 400px;
+  }
+}
+
+@media (min-width: 1120px) {
+  .card__box {
     width: 300px;
   }
 }

@@ -150,6 +150,9 @@
             $duration: 1.5s,
         );
         @include tablet {
+            width: 400px;
+        }
+        @include desktop {
             width: 300px;
         }
         &:hover {
