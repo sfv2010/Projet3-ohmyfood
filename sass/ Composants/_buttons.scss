@@ -15,8 +15,7 @@
     transition: .3s ease-out;
     &:hover {
         opacity:0.8;
-        font-size: 1.1rem;
-        // transform: translate(0,2px);
+        font-size: 1.1rem;  
         @include box-shadow($color1light);
     }
 }
