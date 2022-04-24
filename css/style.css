@@ -110,7 +110,7 @@ li {
   margin: 30px 30px 20px;
   max-width: 300px;
   padding: 20px;
-  line-height: 10px;
+  line-height: 20px;
   text-align: center;
   border-radius: 30px;
   color: #fff;
@@ -453,6 +453,13 @@ section {
 }
 
 @media (min-width: 400px) {
+  .restaurants__bloc {
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+}
+
+@media (min-width: 700px) {
   .restaurants__bloc {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;

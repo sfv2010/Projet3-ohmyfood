@@ -95,6 +95,9 @@ section {
         @include flex(space-around);
         flex-direction: column;
         @include mobile400 {
+            align-content:center;
+        }
+        @include tablet {
             flex-direction: row;
         }
     } 
