@@ -413,7 +413,6 @@ section {
 .functioning__number {
   position: absolute;
   padding: 3px 8px;
-  position: absolute;
   left: -15px;
   border-radius: 50%;
   background: #9356dc;
